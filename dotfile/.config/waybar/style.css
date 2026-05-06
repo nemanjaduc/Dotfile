@@ -1,0 +1,173 @@
+@import "colors.css";
+
+/*------------Global Properties-----------------*/
+* {
+    border: none;
+    border-radius: 0px;
+    font-family: "JetBrainsMono Nerd Fonts Propo", "Noto San CJK JP", "Noto San CJK KR";
+    font-size: 15px;
+    min-height: 0;
+}
+
+/*------------Window--------------------*/
+#window {
+    background: @surface;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*----------Waybar Window------------*/
+window#waybar {
+    background: @surface-alpha;
+}
+
+/*-----------Tooltip--------------*/
+tooltip {
+    background: @surface;
+    border: 2px solid @tertiary;
+    border-radius: 12px;
+}
+
+tooltip label {
+    color: @on_surface;
+    padding: 6px;
+}
+
+/*---------Workspaces-----------------*/
+#workspaces {
+    background: @surface;
+    margin: 5px 5px;
+    padding: 5px 5px;
+    border-radius: 8px;
+    color: @on_surface;
+}
+
+#workspaces button {
+    font-weight: bold;
+    padding: 0px 2px;
+    margin: 0px 3px;
+    border-radius: 0px;
+}
+
+#workspaces button.active {
+    font-weight: bold;
+    background-color: @primary;
+    color: @scrim;
+    border-radius: 8px;
+    min-width: 40px;
+    background-size: 200% 200%;
+}
+
+#workspaces button:hover {
+    font-weight: bold;
+    background-color: @tertiary;
+    color: @scrim;
+    border-radius: 24px;
+    min-width: 40px;
+    background-size: 200% 200%;
+}
+
+#workspaces button.urgent {
+    font-weight: bold;
+    background-color: @error;
+    color: @scrim;
+    border-radius: 16px;
+    min-width: 50px;
+    background-size: 400% 400%;
+}
+
+/*---------------Tray, Clock, Playerctl, Battery ----------------------*/
+#tray,
+#pulseaudio,
+#network,
+#battery,
+#custom-playerctl.backward,
+#custom-playerctl.play,
+#custom-playerctl.foward {
+    background: @surface;
+    font-weight: bold;
+    margin: 2px 0px;
+}
+
+#tray,
+#pulseaudio,
+#network,
+#battery {
+    color: @on_surface;
+    border-radius: 8px;
+    padding: 2px 8px;
+    margin: 5px 2px;
+    background: @surface;
+
+}
+
+#clock {
+    color: @on_surface;
+    background: @surface;
+    border-radius: 8px;
+    padding: 2px 8px;
+    margin: 5px 2px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#tray menu * {
+    padding: 0px 5px;
+    transition: all .3s ease;
+}
+
+#tray menu separator {
+    padding: 0px 5px;
+    transition: all .3s ease;
+}
+
+/*-----------Playerctl-------------------*/
+#custom-playerctl.backward,
+#custom-playerctl.play,
+#custom-playerctl.foward {
+    background: @surface;
+    font-size: 20px;
+}
+
+#custom-playerctl.backward:hover,
+#custom-playerctl.play:hover,
+#custom-playerctl.foward:hover {
+    color: @on_surface;
+}
+
+#custom-playerctl.backward {
+    color: @tertiary;
+    border-radius: 8px 0px 0px 8px;
+    padding-left: 10px;
+    margin: 5px 0px;
+    margin-left: 2px;
+}
+
+#custom-playerctl.play {
+    color: @on_primary_fixed_variant;
+    padding: 0px 5px;
+    margin: 5px 0px;
+
+}
+
+#custom-playerctl.foward {
+    color: @tertiary;
+    border-radius: 0px 8px 8px 0px;
+    padding-right: 2px;
+    margin: 5px 0px;
+    margin-right: 2px
+}
+
+#custom-playerlabel {
+    background: @surface;
+    color: @on_surface;
+    border-radius: 8px;
+    padding: 2px 8px;
+    margin: 5px 2px;
+    font-weight: bold;
+}
