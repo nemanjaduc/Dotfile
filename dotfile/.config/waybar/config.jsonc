@@ -149,7 +149,7 @@
         "format-ethernet": "󰈀 100% ",
         "format-linked": "{ifname} (No IP)",
         "format-wifi": "   {signalStrength}%",
-        "tooltip-format": "Connected to {essid} {ifname} via {gwaddr}",
+        "tooltip-format": "{essid}",
         "on-click": "alacritty --title AlacrittyNmtui -e sh -c  'sleep 0.1; nmtui'"
     },
     /*------------Tray--------------------*/
@@ -167,7 +167,8 @@
     /*------------Custom memu------------------*/
     "custom/power": {
         "tooltip": true,
-        "on-click": "wlogout -p layer-shell &",
-        "format": "⏻"
+        "on-click": "wlogout -b 6 -p layer-shell &",
+        "format": "⏻",
+        "tooltip": false
     }
 }
