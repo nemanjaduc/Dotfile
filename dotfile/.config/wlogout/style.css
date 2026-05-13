@@ -10,7 +10,7 @@ window {
 }
 
 button {
-	color: @inverse_on_surface;
+	color: #FAFAFA;
 	background-color: @on_primary;
 	outline-style: none;
 	border: none;
