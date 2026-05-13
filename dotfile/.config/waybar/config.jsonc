@@ -54,15 +54,16 @@
             "zen": " zen",
             "brave-browser": " brave",
             "helium": " helium",
-            "vivaldi": " vivaldi",
+            "vivaldi-stable": " vivaldi",
             "chromium": " chromium",
             "kitty": " kitty",
+	    "alacritty": "  alacritty",
             "spotify": " spotify",
             "code": "󰨞 code",
             "com.ayugram.desktop": " telegram",
-            "discord": " discord",
+            "vesktop": "  vesktop",
             "steam": " steam"
-        },
+        }
     },
     /*--------------Pacman--------------------*/
     "custom/pacman": {
@@ -140,7 +141,8 @@
             ]
         },
         "format-muted": "󰝟",
-        "on-click": "pavucontrol",
+	"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "on-click-right": "pavucontrol",
         "scroll-step": 1
     },
     /*--------------Network-----------------*/
@@ -161,8 +163,9 @@
     "clock": {
         "format": "{:%I:%M:%S %p}",
         "interval": 1,
-        "format-alt": "{:%A, %B %d, %Y (%R)}",
-        "tooltip": false
+        "tooltip-format": "{:%A, %B %d, %Y (%R)}",
+	"on-click": "gnome-calendar",
+	"on-click-right": "gnome-calendar"
     },
     /*------------Custom memu------------------*/
     "custom/power": {

@@ -55,9 +55,9 @@ input_path = '~/.config/matugen/templates/cava-colors.ini'
 output_path = '~/.config/cava/themes/matugen'
 #post_hook = 'pkill -USR1 cava'
 
-#[templates.vesktop]
-#input_path = './templates/midnight-discord.css'
-#output_path = '~/.config/Vencord/themes/midnight-discord.css'
+[templates.vesktop]
+input_path = '~/.config/matugen/templates/midnight-discord.css'
+output_path = '~/.config/vesktop/themes/midnight-discord.css'
 
 [templates.zed]
 input_path = '~/.config/matugen/templates/zed-colors.json'
@@ -83,3 +83,11 @@ output_path = '~/.config/obs-studio/themes/matugen.obt'
 [templates.wlogout]
 input_path = '~/.config/matugen/templates/waybar-colors.css'
 output_path = '~/.config/wlogout/colors.css'
+
+[templates.vivaldi]
+input_path = '~/.config/matugen/templates/vivaldi.css'
+output_path = '~/.config/vivaldi/CustomCSS/vivaldi_css/vivaldi.css' 
+
+
+
+
